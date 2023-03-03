@@ -1,0 +1,106 @@
+.about-section{
+    background-color: $base-black;
+    text-align: center;
+
+    h2{
+        color: $white;
+        width: 170px;
+
+        @media (max-width:520px){
+            width: 130px;
+        }
+    }
+
+    .about-info{
+        color: $white;
+        padding-top: 100px;
+        text-align: center;
+        font-size: 23px;
+
+        @media (max-width:990px){
+            font-size: 18px;
+            padding-top: 80px;
+        }
+
+        @media (max-width:520px){
+            font-size: 14px;
+        }
+    }
+
+    .about-cards{
+        @include grid(100px);
+        justify-items: center;
+        padding-top: 100px;
+
+        @media (max-width:520px){
+            @include grid(150px);
+            gap: 40px;
+            padding-top: 60px;
+        }
+        
+        .about-card{
+            background-color: $dark-gray;
+            width: 200px;
+            height: 200px;
+            color: $orange;
+            font-size: 20px;
+            padding-top: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .3s linear;
+
+            @media (max-width:990px){
+                width: 150px;
+                height: 150px;
+                font-size: 15px;
+                padding-top: 15px;
+            }
+
+            @media (max-width:770px){
+                width: 120px;
+                height: 120px;
+                font-size: 12px;
+                padding-top: 12px;
+            }
+            
+
+            .duration{
+                padding-top: 30px;
+
+                @media (max-width:990px){
+                    padding-top: 20px;
+                }
+
+                span{
+                    font-size: 60px;
+                    margin-right: 5px;
+
+                    @media (max-width:990px){
+                        font-size: 50px;
+                    }
+
+                    @media (max-width:770px){
+                        font-size: 40px;
+                    }
+                }
+            }
+
+            &.card-3{
+                .duration{
+                    padding-top: 5px;
+
+                    @media (max-width:990px){
+                        padding-top: 0;
+                    }
+                }
+            }
+
+            &:hover{
+                color: $white;
+                background-color: $orange;
+                transform: scale(1.2);
+            }
+        }
+    }
+
+}
