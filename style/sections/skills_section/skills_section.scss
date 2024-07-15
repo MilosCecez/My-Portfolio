@@ -1,0 +1,96 @@
+.skills-section{
+    color: $black;
+    background: $light-gray;
+
+    h2{
+        width: 85px;
+        color: $black;
+
+        @media (max-width:520px){
+            width: 65px;
+        }
+    }
+
+    .skill-content{
+        display: flex;
+        justify-content: center;
+        margin-top: 120px;
+        gap: 50px;
+
+        @media (max-width:770px){
+            margin-top: 80px;
+            gap: 30px;
+        }
+
+        @media (max-width:520px){
+            gap: 20px;
+        }
+
+        i{
+            margin-top: 85px;
+            font-size: 70px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .3s linear;
+
+            @media (max-width:770px){
+                font-size: 40px;
+                margin-top: 70px;
+            }
+
+            @media (max-width:520px){
+                font-size: 30px;
+                margin-top: 35px;
+            }
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+    .languages{
+
+        .skill{
+            display: none;
+
+            &.active{
+                display: block;
+            }
+        }
+        img{
+            height: 230px;
+            width: 400px;
+            animation: moveBanner .2s linear backwards;
+
+            @media (max-width:770px){
+                height: 180px;
+                width: 250px;
+            }
+
+            @media (max-width:520px){
+                height: 100px;
+                width: 200px;
+            }
+        }
+
+        p{
+            margin-top: 25px;
+            max-width: 400px;
+            font-size: 20px;
+            text-align: center;
+            animation: moveBanner .2s linear .4s backwards;
+
+            @media (max-width:770px){
+                max-width: 250px;
+                font-size: 13px;
+                margin-top: 20px;
+            }
+
+            @media (max-width:520px){
+                margin-top: 10px;
+            }
+        }
+    }
+}
+}
+

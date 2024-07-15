@@ -1,0 +1,172 @@
+.contacts-section{
+    color: $black;
+    background-color: $light-gray;
+
+    @media (max-width:770px){
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    h2{
+        color: $black;
+        width: 157px;
+
+        @media (max-width:520px){
+            width: 117px;
+        }
+    }
+    .contacts-info{
+        display: flex;
+        margin-top: 170px;
+
+
+        @media (max-width:990px){
+            flex-direction: column;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        .contacts-form{
+            width: 50%;
+
+            @media (max-width:990px){
+                width: 80%;
+            }
+            form{
+                width: 95%;
+
+                @media (max-width:990px){
+                    width: 100%;
+                }
+
+                h4{
+                    font-weight: bolder;
+                    font-size: 20px;
+                }
+
+                .text-group{
+                    display: flex;
+                    justify-content: space-between;
+
+                    @media (max-width:520px){
+                        flex-direction: column;
+                    }
+
+                    input{
+                        width: 48%;
+
+                        @media (max-width:520px){
+                            width: 100%;
+                        }
+
+                    }
+                    
+                }
+
+                input{
+                    width: 100%;
+                    margin-top: 15px;
+                }
+
+                textarea{
+                    resize: none;
+                    width: 100%;
+                    border-radius: 5px;
+                    padding: 10px;
+                    color: $light-color;
+                    border: 1px solid $black;
+                    margin-top: 15px;
+                }
+
+                button{
+                    margin-top: 15px;
+                }
+            }
+        }
+
+        .contacts-text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width:990px){
+                width: 80%;
+                flex-direction: row;
+                margin-top: 100px;
+                
+            }
+
+            .navigation{
+                margin-top: 0;
+
+                li{
+                    width: 150px;
+                    margin-top: 10px;
+
+                    @media (max-width:520px){
+                        width: auto;
+                    }
+
+                    a{
+                        font-size: 17px;
+
+                        @media (max-width:990px){
+                            font-size: 20px;
+                        }
+
+                        @media (max-width:520px){
+                            font-size: 13px;
+                        }
+
+                        i{
+                            color: $orange;
+                            padding-right: 8px;
+                            transition: .2s linear;
+
+                        }
+                        
+                        &:hover{
+                            i{
+                                padding-right: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .info-group{
+                margin-left: 150px;
+                font-size: 17px;
+                line-height: 40px;
+
+                @media (max-width:990px){
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+
+                @media (max-width:770px){
+                    margin-left: 50px;
+                    font-size: 13px;
+                }
+
+                @media (max-width:520px){
+                    margin-left: 0;
+                    font-size: 10px;
+                    line-height: 25px;
+                }
+
+                li{
+                    i{
+                        margin-right: 20px;
+
+                        @media (max-width:990px){
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

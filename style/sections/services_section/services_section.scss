@@ -1,0 +1,103 @@
+.services-section{
+    background-color: $base-black;
+    color: $orange;
+
+    h2{
+        color: $white;
+        width: 145px;
+
+        @media (max-width:520px){
+            width: 105px;
+        }
+    }
+
+        .services-cards{
+            @include grid(580px);
+            justify-items: center;
+            gap: 50px;
+            margin-top: 100px;
+
+            @media (max-width:1530px){
+                @include grid(500px);
+            }
+
+            @media (max-width:1350px){
+                @include grid(400px);
+            }
+
+            @media (max-width:520px){
+                @include grid(271px);
+            }
+
+            .service-card{
+                position: relative;
+                background-color: $dark-gray;
+                padding-top: 30px;
+                height: 300px;
+                width: 270px;
+                text-align: center;
+                cursor: pointer;
+                transition: .3s linear;
+
+                @media (max-width:520px){
+                    height: 200px;
+                    width: 200px;
+                    padding-top: 20px;
+                }
+
+                &:hover{
+                    background-color: $orange;
+                    color: $white;
+                    transform: scale(1.2);
+                }
+
+                .image{
+                    border-radius: 50%;
+                    background-color: $white;
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: auto;
+
+                    @media (max-width:520px){
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    img{
+                        height: 30px;
+                        width: 30px;
+                        top: 50%;
+
+                        @media (max-width:520px){
+                            height: 20px;
+                            width: 20px;
+                        }
+                }
+            }
+
+            h4{
+                font-size: 17px;
+                margin-top: 10px;
+
+                @media (max-width:520px){
+                    font-size: 14px;
+                }
+            }
+
+            p{
+                position: absolute;
+                bottom: 7%;
+                font-size: 12px;
+                left: 3%;
+                right: 3%;
+
+                @media (max-width:520px){
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
